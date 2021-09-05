@@ -1,6 +1,6 @@
 import styles from './ListItem.module.scss'
 
-function ListItem({name,complete,id,onRemoveItem,onComplete}){
+function ListItem({title,complete,id,onRemoveItem,onComplete}){
     const onRemove = ()=>{
         onRemoveItem(id)
     }
@@ -12,7 +12,7 @@ function ListItem({name,complete,id,onRemoveItem,onComplete}){
             <div className="todo__item-check">
                 <input type="checkbox" className="todo__item-check" onClick={onCompleteTask}/>
             </div>
-            <p>{name}</p>
+            <p>{title}</p>
             <div className={styles.removeItem}>
                 <button className="button-remove__item" onClick={onRemove}>
                     <img src="/delete.png" alt="Удалить"/>
