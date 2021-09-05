@@ -1,0 +1,27 @@
+.todo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+  div{
+    flex-basis: 120px;
+  }
+}
+button{
+  background: #ffff;
+  border-width: 0;
+  cursor: pointer;
+}
+.removeItem{
+flex-shrink: 2;
+}
+p{
+  font-size: 24px;
+}
+.todo__item-remove{
+  display: flex;
+  justify-content: flex-end;
+}
+.complete{
+text-decoration: line-through;
+}
